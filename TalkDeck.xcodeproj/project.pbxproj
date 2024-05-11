@@ -11,6 +11,11 @@
 		56D40D992BEF2C40003C83F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D40D982BEF2C40003C83F5 /* ContentView.swift */; };
 		56D40D9B2BEF2C41003C83F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D40D9A2BEF2C41003C83F5 /* Assets.xcassets */; };
 		56D40D9E2BEF2C41003C83F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D40D9D2BEF2C41003C83F5 /* Preview Assets.xcassets */; };
+		56D40DA52BEF2D77003C83F5 /* TalkDeckBrowsingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D40DA42BEF2D77003C83F5 /* TalkDeckBrowsingView.swift */; };
+		56D40DA72BEF2E0F003C83F5 /* MyTalkDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D40DA62BEF2E0F003C83F5 /* MyTalkDeckView.swift */; };
+		56D40DA92BEF2F07003C83F5 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D40DA82BEF2F07003C83F5 /* SettingView.swift */; };
+		56D40DAD2BEF2FB7003C83F5 /* TalkDeckData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D40DAC2BEF2FB7003C83F5 /* TalkDeckData.swift */; };
+		56D40DB02BEF300A003C83F5 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D40DAF2BEF300A003C83F5 /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		56D40D982BEF2C40003C83F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		56D40D9A2BEF2C41003C83F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56D40D9D2BEF2C41003C83F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		56D40DA42BEF2D77003C83F5 /* TalkDeckBrowsingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkDeckBrowsingView.swift; sourceTree = "<group>"; };
+		56D40DA62BEF2E0F003C83F5 /* MyTalkDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTalkDeckView.swift; sourceTree = "<group>"; };
+		56D40DA82BEF2F07003C83F5 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		56D40DAC2BEF2FB7003C83F5 /* TalkDeckData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkDeckData.swift; sourceTree = "<group>"; };
+		56D40DAF2BEF300A003C83F5 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,9 @@
 		56D40D952BEF2C40003C83F5 /* TalkDeck */ = {
 			isa = PBXGroup;
 			children = (
+				56D40DAE2BEF2FFE003C83F5 /* Mocks */,
+				56D40DAB2BEF2FB1003C83F5 /* Models */,
+				56D40DAA2BEF2FAA003C83F5 /* Views */,
 				56D40D962BEF2C40003C83F5 /* TalkDeckApp.swift */,
 				56D40D982BEF2C40003C83F5 /* ContentView.swift */,
 				56D40D9A2BEF2C41003C83F5 /* Assets.xcassets */,
@@ -65,6 +78,32 @@
 				56D40D9D2BEF2C41003C83F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		56D40DAA2BEF2FAA003C83F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56D40DA42BEF2D77003C83F5 /* TalkDeckBrowsingView.swift */,
+				56D40DA62BEF2E0F003C83F5 /* MyTalkDeckView.swift */,
+				56D40DA82BEF2F07003C83F5 /* SettingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56D40DAB2BEF2FB1003C83F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56D40DAC2BEF2FB7003C83F5 /* TalkDeckData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		56D40DAE2BEF2FFE003C83F5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				56D40DAF2BEF300A003C83F5 /* MockData.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D40DAD2BEF2FB7003C83F5 /* TalkDeckData.swift in Sources */,
+				56D40DA52BEF2D77003C83F5 /* TalkDeckBrowsingView.swift in Sources */,
+				56D40DA92BEF2F07003C83F5 /* SettingView.swift in Sources */,
 				56D40D992BEF2C40003C83F5 /* ContentView.swift in Sources */,
 				56D40D972BEF2C40003C83F5 /* TalkDeckApp.swift in Sources */,
+				56D40DB02BEF300A003C83F5 /* MockData.swift in Sources */,
+				56D40DA72BEF2E0F003C83F5 /* MyTalkDeckView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +324,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +354,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

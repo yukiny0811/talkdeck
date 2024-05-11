@@ -9,13 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            
+            TalkDeckBrowsingView()
+                .tabItem {
+                    Image(systemName: "globe")
+                    Text("探す")
+                }
+            
+            MyTalkDeckView()
+                .tabItem {
+                    Image(systemName: "menucard")
+                    Text("自分のデッキ")
+                }
+            
+            SettingView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("設定")
+                }
         }
-        .padding()
     }
 }
 
